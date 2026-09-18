@@ -10,8 +10,10 @@ const Form = () => {
     const submitHandler = (e)=>{
         e.preventDefault();
         console.log("Form Submitted.....");
-        setSum(firstNum + secondNum);
+        setSum( Number(firstNum) + Number(secondNum));
         setShowResult(true);
+        setFirstNum("");
+        setSecondNum("");
         
     }
   return (
